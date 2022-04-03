@@ -1,0 +1,64 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="/css/style1.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+</head>
+
+<body>
+<!-- main -->
+<div class="main-w3layouts wrapper">
+
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <option th:value="${pollID}"></option>
+
+            <form action="/addResult" method="post">
+                 <input class="text" type="hidden" name="pollID" th:value="${pollID}">
+                <input class="text" type="text" name="explanation" placeholder="explanation" required=""><br>
+                <input class="text" type="text" name="min-score" placeholder="min-score" required=""><br>
+                <input class="text" type="text" name="max-score" placeholder="max-score" required="">
+                 <input type="submit" value="ADD RESULT">
+            </form>
+
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="colorlibcopy-agile">
+    </div>
+    <!-- //copyright -->
+    <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!-- //main -->
+</body>
+
+</html>

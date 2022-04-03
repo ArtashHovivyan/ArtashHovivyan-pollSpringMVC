@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<link rel="stylesheet" href="static/css/style.css">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <!--    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />-->
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+</head>
+
+<body>
+<!-- main -->
+
+
+<div class="main-w3layouts wrapper">
+    <h1 style="color: #800004">Welcome</h1>
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <div th:if="${massage}">
+                <span style="color: red" th:text="${massage}"></span>
+            </div>
+
+            <p><a href="/home"> Pass the test</a>
+            <p><a href="/logout"> logout</a>
+            <p>
+        <div>
+            <h2 th:text="${user.getName()}"></h2>
+                <h2 th:text="${user.getSurname()}"></h2>
+                    <h2 th:text="${user.getEmail()}"></h2>
+                        <img th:src="@{/getImage(imageUrl=${photo.getName()})}" alt="">
+        </div>
+    </div>
+
+    <!-- //copyright -->
+    <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!-- //main -->
+</body>
+
+</html>

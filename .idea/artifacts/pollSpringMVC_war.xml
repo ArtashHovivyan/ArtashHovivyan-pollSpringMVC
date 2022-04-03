@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pollSpringMVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pollSpringMVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="pollSpringMVC.war">
+      <element id="artifact" artifact-name="pollSpringMVC:war exploded" />
+    </root>
+  </artifact>
+</component>
